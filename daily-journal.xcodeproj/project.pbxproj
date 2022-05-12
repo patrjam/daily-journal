@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		712DB5052818400A00CB3B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DB5042818400A00CB3B90 /* AppDelegate.swift */; };
 		712DB5072818400A00CB3B90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DB5062818400A00CB3B90 /* SceneDelegate.swift */; };
-		712DB5092818400A00CB3B90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712DB5082818400A00CB3B90 /* ViewController.swift */; };
 		712DB50C2818400A00CB3B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712DB50A2818400A00CB3B90 /* Main.storyboard */; };
 		712DB50F2818400A00CB3B90 /* daily_journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712DB50D2818400A00CB3B90 /* daily_journal.xcdatamodeld */; };
 		712DB5112818400C00CB3B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712DB5102818400C00CB3B90 /* Assets.xcassets */; };
 		712DB5142818400C00CB3B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712DB5122818400C00CB3B90 /* LaunchScreen.storyboard */; };
+		7155E89228256F48008BCD0D /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155E89128256F48008BCD0D /* EntriesTableViewController.swift */; };
+		7155E89428257008008BCD0D /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155E89328257008008BCD0D /* EntryViewController.swift */; };
+		7155E89728294A15008BCD0D /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155E89528294A15008BCD0D /* Entry+CoreDataClass.swift */; };
+		7155E89828294A15008BCD0D /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155E89628294A15008BCD0D /* Entry+CoreDataProperties.swift */; };
+		71C5A5AB282BE59400020197 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5A5AA282BE59400020197 /* EntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		712DB5012818400A00CB3B90 /* daily-journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily-journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712DB5042818400A00CB3B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712DB5062818400A00CB3B90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		712DB5082818400A00CB3B90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		712DB50B2818400A00CB3B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		712DB50E2818400A00CB3B90 /* daily_journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = daily_journal.xcdatamodel; sourceTree = "<group>"; };
 		712DB5102818400C00CB3B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712DB5132818400C00CB3B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712DB5152818400C00CB3B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7155E89128256F48008BCD0D /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		7155E89328257008008BCD0D /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		7155E89528294A15008BCD0D /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7155E89628294A15008BCD0D /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71C5A5AA282BE59400020197 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,14 @@
 		712DB5032818400A00CB3B90 /* daily-journal */ = {
 			isa = PBXGroup;
 			children = (
+				7155E89628294A15008BCD0D /* Entry+CoreDataProperties.swift */,
+				7155E89528294A15008BCD0D /* Entry+CoreDataClass.swift */,
 				712DB5042818400A00CB3B90 /* AppDelegate.swift */,
 				712DB5062818400A00CB3B90 /* SceneDelegate.swift */,
-				712DB5082818400A00CB3B90 /* ViewController.swift */,
 				712DB50A2818400A00CB3B90 /* Main.storyboard */,
+				7155E89328257008008BCD0D /* EntryViewController.swift */,
+				7155E89128256F48008BCD0D /* EntriesTableViewController.swift */,
+				71C5A5AA282BE59400020197 /* EntryTableViewCell.swift */,
 				712DB5102818400C00CB3B90 /* Assets.xcassets */,
 				712DB5122818400C00CB3B90 /* LaunchScreen.storyboard */,
 				712DB5152818400C00CB3B90 /* Info.plist */,
@@ -141,10 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712DB5092818400A00CB3B90 /* ViewController.swift in Sources */,
+				71C5A5AB282BE59400020197 /* EntryTableViewCell.swift in Sources */,
 				712DB5052818400A00CB3B90 /* AppDelegate.swift in Sources */,
+				7155E89828294A15008BCD0D /* Entry+CoreDataProperties.swift in Sources */,
 				712DB5072818400A00CB3B90 /* SceneDelegate.swift in Sources */,
 				712DB50F2818400A00CB3B90 /* daily_journal.xcdatamodeld in Sources */,
+				7155E89228256F48008BCD0D /* EntriesTableViewController.swift in Sources */,
+				7155E89728294A15008BCD0D /* Entry+CoreDataClass.swift in Sources */,
+				7155E89428257008008BCD0D /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
